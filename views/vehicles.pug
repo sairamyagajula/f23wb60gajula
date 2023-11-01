@@ -2,11 +2,11 @@ extends layout
 
 block content
   h1= title
-  - var results =[{name:"Swift", mileage:"50000", price:200000},{name:"Creta", mileage:"20000", price:1500000},{name:"Thar", mileage:"30000", price:3000000}]
+  - var results =[{name:"AUDI", mileage:"30000", color:"Black"},{name:"BMW", mileage:"200000", color:"Blue"},{name:"Thar", mileage:"300000", color:"red"}]
   div(class="container-fluid")
   div(class="row")
-   each v,index  in results 
-    div(class="col-sm-2") #{v.name}, #{v.mileage}, #{v.price}
+   each r,index  in results 
+    div(class="col-sm-2") #{r.name}, #{r.mileage}, #{r.color}
     
  
     
